@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Multirotor images of Paxi Islands</title>
+  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+  <meta name="author" content="Nathan Searles">
+
+  <!-- CSS stylesheets-->
+  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+
+  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+
+
+
+  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+
+  <!-- CSS for slidesjs.com example -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/css/example.css">
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/css/font-awesome.min.css">
+  <!-- End CSS for slidesjs.com example -->
+
+  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  </style>
+  <!-- SlidesJS Required: -->
+</head>
+
+
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+
+	<a class="brand" href="#">Aerial Paxi</a>
+
+
+	<div class="nav-collapse collapse">
+	  <ul class="nav">
+	    <li class="active"><a href="#">Photos</a></li>
+	    <li><a href="video.html">Videos</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	  </ul>
+	</div> <!-- /.nav-collapse -->
+
+
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+  <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div class="row-fluid section1">
+    <div class="container">
+      <div id="slides">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-5.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-6.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-7.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-8.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-9.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-10.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-11.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-12.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-13.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-14.jpg">
+	<img src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/example-slide-15.jpg">	
+      </div>
+    </div>
+    <!-- End SlidesJS Required: Start Slides -->
+
+    </div>
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="https://dl.dropboxusercontent.com/u/860639/Coursera/imagehosting/multirotor/js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+
+  <div class="row-fluid heading">
+    <div class="span12">
+    </div>
+  </div>
+
+  <div class="row-fluid section2">
+    <div class="span5 offset1 video">
+      <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/WpusHOwaFmw" frameborder="0" allowfullscreen></iframe> -->
+      <iframe width="400" height="225" src="//www.youtube.com/embed/WpusHOwaFmw" frameborder="0" allowfullscreen></iframe> 
+    </div>
+    <div class="span5 asset">
+      Besides photographs, videos can be taken as well. Due to state-of-the-art stabilization systems, the UAV can 
+      be used to take magnificent video scenes, from a perspective that would otherwise need expensive, intrusive 
+      and time consuming solutions (e.g., cranes, helicopters, etc.)
+    </div>
+
+  </div>
+
+  </div>  <!-- End of main container -->
+
+
+  <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+  <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+  <!-- http://twitter.github.io/bootstrap/javascript.html#collapse  -->
+  <div class="row-fluid faq">
+    <div class="span10 offset1">
+      <h3>Frequently Asked Questions</h3>
+      <div class="accordion" id="accordion2">
+
+	<div class="accordion-group">
+	  <div class="accordion-heading">
+	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+	      Is it possible to shoot video scenes?
+	    </a>
+	  </div>
+	  <div id="collapseTwo" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      Yes, aerial video is also supported thanks to state-of-the-art technology in camera stabilization systems 
+	      and post-processing software. 
+	    </div>
+	  </div>
+	</div>
+	
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+
+</body>
+</html>
